@@ -24,7 +24,7 @@ const Navbar = () => {
 
                     </div>
                     <ul tabIndex={0} className="dropdown-content z-[1] space-y-3 p-3 shadow bg-base-100 rounded-box w-40">
-                        <li><NavLink>Project Details</NavLink></li>
+                        <li><NavLink to={"/projects"}>Project Details</NavLink></li>
                         <hr />
                         <li><NavLink>Terms & Condition</NavLink></li>
                         <hr />
@@ -34,13 +34,13 @@ const Navbar = () => {
                 </div>
             </li>
             <li className="flex">
-                <NavLink className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Contact</NavLink>
+                <NavLink to={"/contact"} className="flex items-center px-4 -mb-1 border-b-2 border-transparent">Contact</NavLink>
             </li>
         </ul>
     </>
 
     return (
-        <header className="p-4 px-6 w-full   text-white fixed z-10 opacity-80 bg-black ">
+        <header className=" p-4 px-6 w-full   text-white fixed z-10 opacity-80 bg-black ">
             <div className="flex justify-between items-center h-16 mx-auto">
                 {/* for small device drawer */}
                 <div className=" md:hidden  ">
@@ -63,15 +63,15 @@ const Navbar = () => {
 
                                     </div>
                                     <ul tabIndex={0} className="dropdown-content z-[1] space-y-3 p-3 shadow bg-base-100 rounded-box w-40">
-                                        <li><NavLink>Project Details</NavLink></li>
+                                        <li><NavLink to={"/projects"}>Project Details</NavLink></li>
                                         <hr />
                                         <li><NavLink>Terms & Condition</NavLink></li>
                                         <hr />
                                         <li><NavLink>Privacy Policy</NavLink></li>
-                                        <hr />
+
                                     </ul>
                                 </div></li>
-                                <li><NavLink>Contact</NavLink></li>
+                                <li><NavLink to={"/contact"}>Contact</NavLink></li>
                             </ul>
                         </div>
                     </div>

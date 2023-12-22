@@ -2,7 +2,7 @@
 
 const AboutMe = () => {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 p-4 gap-10 md:gap-24 py-20 md:px-28 text-black">
+        <div className="grid grid-cols-1 md:grid-cols-2 bg-gray-100 p-4 gap-10 md:gap-24 py-20 md:px-28 text-black">
             {/* section 1 */}
             <div>
                 <h2 className="text-3xl mb-3">Hi there I am Niloy,</h2>
