@@ -3,6 +3,7 @@ import htmlimg from "./../../../assets/html.png"
 import cssimg from "./../../../assets/css.png"
 import jsimg from "./../../../assets/js.png"
 import reactimg from "./../../../assets/react.png"
+
 const ChooseMe = () => {
     return (
         <div className=" flex flex-col md:flex-row items-center text-black gap-10 md:gap-24 md:px-28 bg-gray-100">

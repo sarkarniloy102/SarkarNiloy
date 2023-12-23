@@ -29,7 +29,7 @@ const Navbar = () => {
                         <li><NavLink>Terms & Condition</NavLink></li>
                         <hr />
                         <li><NavLink>Privacy Policy</NavLink></li>
-                        <hr />
+
                     </ul>
                 </div>
             </li>

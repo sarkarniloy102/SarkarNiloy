@@ -1,30 +1,37 @@
-
+import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
+import 'react-tabs/style/react-tabs.css';
+import FontEnd from './FontEnd/FontEnd';
+import Responsive from './Responsive/Responsive';
+import WithBackend from './WithBackend/WithBackend';
 const Projects = () => {
     return (
-        <div className="pt-32 pb-5">
+        <div className="pt-32 pb-5 px-10 lg:px-28">
             <div>
-                <div className="max-w-lg p-4 shadow-md dark:bg-gray-900 dark:text-gray-100">
-                    <div className="flex justify-between pb-4 border-bottom">
-                        <div className="flex items-center">
-                            <a rel="noopener noreferrer" href="#" className="mb-0 capitalize dark:text-gray-100">Photography</a>
-                        </div>
-                        <a rel="noopener noreferrer" href="#">See All</a>
-                    </div>
-                    <div className="space-y-4">
-                        <div className="space-y-2">
-                            <img src="https://source.unsplash.com/random/480x360/?4" alt="" className="block object-cover object-center w-full rounded-md h-72 dark:bg-gray-500" />
-                            <div className="flex items-center text-xs">
-                                <span>6 min ago</span>
+                <div >
+
+                    <Tabs>
+                        <TabList className="flex flex-col lg:flex-row mb-6 justify-between text-black">
+                            <h2 className="text-4xl text-center lg:text-end  font-bold text-black">My Projects</h2>
+                            <div className='flex mb-6  text-black'>
+                                <Tab className="border-b-2 focus:text-violet-500 py-2 px-4 cursor-pointer">html+css</Tab>
+                                <Tab className="border-b-2 focus:text-violet-500 py-2 px-4 cursor-pointer">Font End</Tab>
+                                <Tab className="border-b-2 focus:text-violet-500 py-2 px-4 cursor-pointer">Font+Back end</Tab>
                             </div>
-                        </div>
-                        <div className="space-y-2">
-                            <a rel="noopener noreferrer" href="#" className="block">
-                                <h3 className="text-xl font-semibold dark:text-violet-400">Facere ipsa nulla corrupti praesentium pariatur architecto</h3>
-                            </a>
-                            <p className="leadi dark:text-gray-400">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, excepturi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, excepturi.</p>
-                        </div>
-                    </div>
+
+                        </TabList>
+
+                        <TabPanel>
+                            <FontEnd></FontEnd>
+                        </TabPanel>
+                        <TabPanel>
+                            <Responsive></Responsive>
+                        </TabPanel>
+                        <TabPanel>
+                            <WithBackend></WithBackend>
+                        </TabPanel>
+                    </Tabs>
                 </div>
+
             </div>
         </div>
     );
